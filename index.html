@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Pedido</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Haz tu pedido</h2>
+    <form id="pedidoForm">
+      <label for="pedido">¿Qué deseas pedir?</label>
+      <textarea id="pedido" required></textarea>
+
+      <label for="nombre">Nombre y Apellido</label>
+      <input type="text" id="nombre" required>
+
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" required>
+
+      <label for="referencia">Referencia</label>
+      <input type="text" id="referencia">
+
+      <label for="pago">¿Con cuánto vas a pagar?</label>
+      <input type="text" id="pago" required>
+
+      <button type="submit">Enviar pedido por WhatsApp</button>
+    </form>
+
+    <div id="mensaje-gracias" class="oculto">¡Gracias por su preferencia! 💚</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
